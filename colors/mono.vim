@@ -1,12 +1,18 @@
 " Mono theme
+" check more at https://github.com/felipevolpone/mono-theme
+
+if (get(g:, "colors_name", "") ==# "mono")
+    runtime! colors/mono.vim
+    finish
+endif
 
 highlight clear
 
 if exists("syntax_on")
     syntax reset
 endif
-let g:colors_name = "mono"
 
+let g:colors_name = "mono"
 
 let s:palette = {}
 
